@@ -47,3 +47,40 @@ namespace IndustrialExpansionMRLONE
         public int Reputation { get; set; }
     }
 }
+using StardewModdingAPI;
+
+namespace IndustrialExpansionMRLONE.Economy
+{
+    public class EconomyManager
+    {
+        private readonly IModHelper Helper;
+        private int Revenue;
+        private int BrandLevel = 1;
+
+        public EconomyManager(IModHelper helper)
+        {
+            Helper = helper;
+        }
+
+        public void AddRevenue(int amount)
+        {
+            Revenue += amount;
+        }
+
+        public void ProcessDaily()
+        {
+            if (Revenue > BrandLevel * 1000)
+                BrandLevel++;
+        }
+
+        public void Load()
+        {
+            Revenue = Helper.Data.ReadSaveData<int>("revenue");
+        }
+
+        public void Save()
+        {
+            Helper.Data.WriteSaveData("revenue", Revenue);
+        }
+    }
+}
