@@ -60,3 +60,13 @@ namespace IndustrialExpansionMRLONE
         public bool DebugMode { get; set; } = false;
     }
 }
+private void OnButtonPressed(object sender, ButtonPressedEventArgs e)
+{
+    if (!Context.IsWorldReady)
+        return;
+
+    if (e.Button == SButton.K)
+    {
+        Game1.activeClickableMenu = new FactoryTerminalMenu();
+    }
+}
