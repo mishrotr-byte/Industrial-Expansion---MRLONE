@@ -1,0 +1,7 @@
+{
+  "EnableCity": true,
+  "EnableEconomySystem": true,
+  "BaseTaxPercent": 12,
+  "FriendshipTaxPercent": 8,
+  "DebugMode": false
+}
