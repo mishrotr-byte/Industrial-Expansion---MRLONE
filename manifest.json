@@ -1,0 +1,11 @@
+{
+  "Name": "Industrial Expansion - MRLONE",
+  "Author": "MRLONE",
+  "Version": "1.0.0",
+  "Description": "Adds a new industrial city MRLONE with factories, economy system and business mechanics.",
+  "UniqueID": "MRLONE.IndustrialExpansion",
+  "EntryDll": "IndustrialExpansionMRLONE.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "ContentPackFor": null
+}
