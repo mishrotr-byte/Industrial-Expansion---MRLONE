@@ -1,0 +1,6 @@
+Размер: 100x100
+Tilesheet: townInterior / outdoor
+Добавить warp:
+To: BusStop
+X: 10
+Y: 95
