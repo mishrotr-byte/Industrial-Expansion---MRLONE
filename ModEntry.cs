@@ -135,3 +135,7 @@ namespace IndustrialExpansionMRLONE
         }
     }
 }
+if (e.Button == SButton.F7)
+{
+    Game1.activeClickableMenu = new Phone.SmartphoneMenu();
+}
